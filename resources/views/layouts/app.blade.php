@@ -9,40 +9,17 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('commandes.index') }}">Gestion Commandes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('commandes.*') ? 'active' : '' }}" href="{{ route('commandes.index') }}">Commandes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('statistiques') ? 'active' : '' }}" href="{{ route('statistiques') }}">Statistiques</a>
-                    </li>
-                </ul>
-                @auth
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            {{ auth()->user()->name }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <button type="submit" class="dropdown-item">Déconnexion</button>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                @endauth
-            </div>
+    <div class="container">
+        <a class="navbar-brand" href="{{ url('/') }}">Gestion Commandes</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ route('commandes.index') }}">Commandes</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('clients.index') }}">Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('produits.index') }}">Produits</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <div class="container mt-4">
         @if(session('success'))

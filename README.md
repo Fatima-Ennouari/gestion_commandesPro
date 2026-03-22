@@ -1,7 +1,8 @@
 # Gestion Commandes
 
-Application web de gestion des commandes clients développée avec **Laravel 10** et **Bootstrap 5**.
+Projet web développé avec Laravel pour gérer facilement les commandes, les clients et les produits.
 
+Ce projet a été réalisé dans un objectif pédagogique afin de comprendre le fonctionnement d’une application complète (CRUD + authentification + base de données).
 ---
 
 ## 🚀 Fonctionnalités principales
@@ -46,11 +47,10 @@ Statuts possibles : `en_attente`, `confirmee`, `livree`, `annulee`
 ## 📥 Installation
 
 ### Prérequis
-- PHP 8.2+ (XAMPP recommandé)
-- Composer
-- Node.js & npm
-- MySQL
-
+- Backend : Laravel (PHP)
+- Frontend : HTML, CSS, Bootstrap
+- Base de données : MySQL
+- Outils : XAMPP, Composer, Node.js
 ### Étapes
 1. Cloner le projet :
    ```bash
@@ -107,55 +107,6 @@ Pagination pour les longues listes
 Chargement des relations avec with()
 
 Cache des données statiques  
-
-# Page de connexion
-![Page de Connexion](public/images/login.png)
-
-Interface d'authentification avec email et mot de passe  
-Option "Se souvenir de moi"  
-Lien d'inscription pour les nouveaux utilisateurs
-
-# Liste des commandes
-![Liste des Commandes](public/images/liste_commande.png)
-
-Tableau paginé des commandes (10 par page)  
-Affichage des références, clients, dates, totaux et statuts  
-Badges colorés selon le statut  
-Actions (Voir, Modifier, Supprimer)  
-Pagination Bootstrap 5
-
-# Création de commande
-![Création de Commande](public/images/new_commande.png)
-
-Formulaire de création avec sélection client  
-Date de commande pré-remplie  
-Sélection des produits avec contrôle des stocks  
-Calcul automatique du total
-
-# Détails de commande
-![Détails de Commande](public/images/details.png)
-
-Informations client complètes  
-Détails de la commande  
-Liste détaillée des produits avec quantités et prix  
-Calcul des sous-totaux et du total  
-Bouton de retour
-
-# Statistiques
-![Statistiques](public/images/statistiques.png)
-
-KPIs principaux (total commandes, CA, clients, produits)  
-Répartition par statut avec pourcentages  
-Top 10 clients par chiffre d'affaires  
-Top 10 produits avec part du CA total  
-Visualisation des performances
-
-
-e en pourcentages
-
-Top clients : classement par CA
-
-Top produits : classement avec part du CA total
 
 
 ## Auteurs

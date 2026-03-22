@@ -8,23 +8,22 @@
         </div>
         <div class="col text-right">
             <a href="{{ route('commandes.create') }}" class="btn btn-primary">
-                Nouvelle Commande
+                New Commande
             </a>
         </div>
     </div>
 
     <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Référence</th>
-                    <th>Client</th>
-                    <th>Date</th>
-                    <th>Total</th>
-                    <th>Statut</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
+        
+            <table class="table table-striped table-hover shadow-sm">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Client</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
             <tbody>
                 @foreach($commandes as $commande)
                 <tr>
