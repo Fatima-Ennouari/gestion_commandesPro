@@ -1,4 +1,4 @@
-# Gestion Commandes
+# Gestion  Commandes
 
 Projet web développé avec Laravel pour gérer facilement les commandes, les clients et les produits.
 
@@ -29,16 +29,16 @@ Ce projet a été réalisé dans un objectif pédagogique afin de comprendre le 
 ## 🗂️ Structure de la base de données
 
 clients
-id, nom, prenom, email, telephone, adresse
+  id, nom, prenom, email, telephone, adresse
 
 produits
-id, nom, description, prix, stock
+  id, nom, description, prix, stock
 
 commandes
-id, reference, client_id, date_commande, statut, total
+  id, reference, client_id, date_commande, statut, total
 
 details_commandes
-id, commande_id, produit_id, quantite, prix_unitaire, sous_total
+  id, commande_id, produit_id, quantite, prix_unitaire, sous_total
 
 Statuts possibles : `en_attente`, `confirmee`, `livree`, `annulee`
 
@@ -71,7 +71,6 @@ Statuts possibles : `en_attente`, `confirmee`, `livree`, `annulee`
 5. Démarrer le serveur :
       ```bash
      php artisan serve
-Accéder à http://127.0.0.1:8000
 
 ## Routes principales
 
