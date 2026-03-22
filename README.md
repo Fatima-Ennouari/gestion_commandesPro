@@ -28,16 +28,16 @@ Application web de gestion des commandes clients développée avec **Laravel 10*
 ## 🗂️ Structure de la base de données
 
 clients
-id, nom, prenom, email, telephone, adresse
+  id, nom, prenom, email, telephone, adresse
 
 produits
-id, nom, description, prix, stock
+  id, nom, description, prix, stock
 
 commandes
-id, reference, client_id, date_commande, statut, total
+  id, reference, client_id, date_commande, statut, total
 
 details_commandes
-id, commande_id, produit_id, quantite, prix_unitaire, sous_total
+  id, commande_id, produit_id, quantite, prix_unitaire, sous_total
 
 Statuts possibles : `en_attente`, `confirmee`, `livree`, `annulee`
 
